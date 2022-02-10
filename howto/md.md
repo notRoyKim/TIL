@@ -70,7 +70,7 @@ this is title
 3. everything
   3. else
 ```
-
+(※ 위의 ```3. else```와 같이 작성해도 결과는 오름차순으로 숫자가 부여된다.)
 
 1. something
 2. anything
@@ -97,3 +97,4 @@ this is title
  - 5
    - 5-1
    + 5-2
+     + 5-2-1
