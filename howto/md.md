@@ -18,7 +18,7 @@ this is title
 =============
 ```
 
-결과
+* 결과
 > this is title
 > =============
 
@@ -29,7 +29,7 @@ this is title
 -------------
 ```
 
-결과
+* 결과
 > this is title
 > -------------
 
@@ -44,7 +44,7 @@ this is title
 ##### this is an H1
 ###### this is an H1
 ```
-결과
+* 결과
 > # this is an H1
 > ## this is an H1
 > ### this is an H1
@@ -61,4 +61,16 @@ this is title
 > > > this is a third blockquote
 
 
-##
+## List
+
+### * 순서있는 목록
+```
+1. something
+2. anything
+3. everything
+```
+
+
+1. something
+2. anything
+3. everything
