@@ -126,9 +126,8 @@ paragraph
 의 형식으로 작성한다.
 
 * 결과 :
-> [TIL][TIL]
-> 
-> [TIL] : https://github.com/notRoyKim/TIL "내 TIL"
+> [TIL][TIL link]
+> [TIL link]: https://github.com/notRoyKim/TIL "내 TIL"
 
 
 * 외부 링크
