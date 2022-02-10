@@ -52,7 +52,7 @@ this is title
 > ##### this is an H1
 > ###### this is an H1
 
-## BlockQuote
+## 2. BlockQuote
 
 ```>```문자를 사용해 Blockquote 표시를 한다.
 
@@ -61,7 +61,7 @@ this is title
 > > > this is a third blockquote
 
 
-## List
+## 3. List
 
 ### 순서있는 목록
 ```
@@ -99,3 +99,19 @@ this is title
  >    - 5-1
  >    + 5-2
  >      + 5-2-1
+
+## 4. Code
+
+4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면, 들여쓰지 않은 행을 만날때까지 코드 영역으로 변환한다.
+
+```
+paragraph
+    code
+paragraph
+```
+
+* 결과
+> paragraph
+>     code
+> paragraph
+
