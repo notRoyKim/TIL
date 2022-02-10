@@ -63,7 +63,7 @@ this is title
 
 ## List
 
-###순서있는 목록
+### 순서있는 목록
 ```
 1. something
 2. anything
@@ -74,3 +74,17 @@ this is title
 1. something
 2. anything
 3. everything
+
+ ### 순서 없는 목록
+ 글머리 기호 ```*```, ```+```, ```-``` 사용
+ 
+ ```
+ * 1
+ * 2
+ * 3
+ + 4
+ - 5
+  - 5-1
+  + 5-2
+ ```
+ 
