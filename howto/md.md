@@ -121,6 +121,7 @@ paragraph
 * 참조 링크
 ```
 [keyword][id]
+
 [id] : url "optional title"
 ```
 의 형식으로 작성한다.
