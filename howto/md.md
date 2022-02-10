@@ -63,7 +63,7 @@ this is title
 
 ## List
 
-### *순서있는 목록
+###순서있는 목록
 ```
 1. something
 2. anything
