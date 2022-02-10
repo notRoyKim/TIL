@@ -11,46 +11,46 @@
 
 ## 1. header
 
-> + 문서 제목
-> 
-> ```
++ 문서 제목
+ 
+```
+this is title
+=============
+```
+
+결과
 > this is title
 > =============
-> ```
-> 
-> 결과
-> > this is title
-> > =============
-> 
-> + 문서 부제
-> 
-> ```
+
++ 문서 부제
+
+```
+this is title
+-------------
+```
+
+결과
 > this is title
 > -------------
-> ```
-> 
-> 결과
-> > this is title
-> > -------------
-> 
-> + 글머리 1 ~ 6
-> 
-> 
-> ```
+
++ 글머리 1 ~ 6
+
+
+```
+# this is an H1
+## this is an H1
+### this is an H1
+#### this is an H1
+##### this is an H1
+###### this is an H1
+```
+결과
 > # this is an H1
 > ## this is an H1
 > ### this is an H1
 > #### this is an H1
 > ##### this is an H1
 > ###### this is an H1
-> ```
-> 결과
-> > # this is an H1
-> > ## this is an H1
-> > ### this is an H1
-> > #### this is an H1
-> > ##### this is an H1
-> > ###### this is an H1
 
 ## BlockQuote
 
