@@ -117,3 +117,17 @@ paragraph
 >     
 > paragraph
 
+## 5. link
+* 참조 링크
+```
+[keyword][id]
+[id] : url "optional title"
+```
+의 형식으로 작성한다.
+
+* 결과 :
+> [TIL][TIL]
+> [TIL] : https://github.com/notRoyKim/TIL "내 TIL"
+
+
+* 외부 링크
