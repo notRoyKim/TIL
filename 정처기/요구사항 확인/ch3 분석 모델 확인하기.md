@@ -6,7 +6,7 @@
 
 * 유스케이스 모델
 
-  * 시스템 기능에 대한 유스케이스 모형 상세화 수준 및 적정성 검증을 위해서 [액터](https://github.com/notRoyKim/TIL/blob/main/CS/A.md#actor), 유스케이스, 유스케이스 명세서 점검
+  * 시스템 기능에 대한 유스케이스 모형 상세화 수준 및 적정성 검증을 위해서 [액터](https://github.com/notRoyKim/TIL/blob/main/CS/A.md#actor), [유스케이스](https://github.com/notRoyKim/TIL/blob/main/CS/A.md#actor), 유스케이스 명세서 점검
   
 * 개념 수준의 분석 클래스 검증
 
