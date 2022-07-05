@@ -14,7 +14,7 @@ Application은 엑셀의 process를 가리킨다.
     Application.Quit()
 
 
-특이사항으로는 Application의 property들 중 대부분의 UI 객체들(ActiveCell, ActiveSheet 등)은 Application 객체 한정자(Object Qualifier)를 사용하지 않고도 작성할 수 있다.
+특이사항으로 Application의 property들 중 대부분의 UI 객체들(ActiveCell, ActiveSheet 등)은 Application 객체 한정자(Object Qualifier)를 사용하지 않고도 작성할 수 있다.
 
 
     Application.ActiveCell.Font.Bold = True
