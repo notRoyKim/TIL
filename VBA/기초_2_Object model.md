@@ -16,6 +16,12 @@
 >    + [6) Range](#6-range-reference)
 > 
 >  * [2. Object 모델 다루기](#2-object-모델-다루기)
+>  
+>    + [1) 객체 접근 기본형](#1-객체-접근-기본형)
+>  
+>    + [2) 객체 접근 단순형](#1-객체-접근-단순형)
+>  
+>    + [3) 객체 접근 예제](#3-객체-접근-예제)
 
 # 1. Object model(객체 모델) 개요
 
@@ -144,26 +150,98 @@ cell에 값을 입력하거나, 삭제하거나, cell들을 병합하는 등의 
 
 1. 이름이 t1.xlsx인 파일
 
-    Application.Workbooks("t1.xlsx")
-    Workbooks("t1.xlsx")
+        Application.Workbooks("t1.xlsx")
+        Workbooks("t1.xlsx")
 
 2. 이 파일의 Sheet1 시트
 
-    Application. Workbooks("t1.xlsx").Worksheets("Sheet1")
-    Workbooks("t1.xlsx").Worksheets("Sheet1")
+        Application. Workbooks("t1.xlsx").Worksheets("Sheet1")
+        Workbooks("t1.xlsx").Worksheets("Sheet1")
 
 3. 이 시트의 A1 cell
 
-    Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
-    Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
+        Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
+        Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
 
 4. 이 시트의 A1 cell에 "TEST" 문자열 입력
 
-    Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
-    Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
+        Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
+        Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
 
 5. 이 시트의 A1 cell의 글꼴을 굵게 설정
-6. 
+
+        Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1").Font.Bold = True
+        Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1").Font.Bold = True
+        
+글꼴 외에도 색상, 크기, 배경색, cell 테두리 종류, 테두리 색상 등 모든 서식을 VBA 코드로 설정할 수 있다.
+
+6. 이 시트의 A2:D4 범위
+
+        Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A2:D4")
+        Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A2:D4")
+
+Range는 여러 연속된 cell을 가리킬 수 있다. Range("A2:D4")는 2행 1열 ~ 4행 4열의 범위를 가리킨다.
+
+### 2) 객체 접근 단순형
+
+        '1. 현재 열려있는 파일
+        ActiveWorkbook
+
+        '2. 현재 열려있는 시트
+        ActiveWorksheet
+
+        '3. 현재 열려있는 시트의 A1 cell
+        Range("A1")
+        ActiveWorksheet.Range("A1")
+
+        '4. 현재 열려있는 시트의 A1 cell 에 "TEST" 라는 값 할당
+        Range("A1") = "TEST"
+
+        '5. 현재 열려있는 시트의 시트의 A1 cell 글꼴을 굵게(Bold) 설정
+        Range("A1").Font.Bold = True
+
+        '6. 현재 열려있는 시트의 A2:D4 범위
+        Range("A2:D4")
+        
+### 3) 객체 접근 예제
+
+        '1. 현재 열려있는 파일들
+        Workbooks
+
+        '2. 현재 열려있는 파일들의 수
+        Workbooks.Count
+
+        '3. 새로운 파일 만들기
+        Workbooks.Add
+
+        '4. 현재 파일을 C:\test.xlsx로 저장하기
+        ActiveWorkbook.SaveAs "C:\test.xlsx"
+
+        '5. 현재 파일의 이름을 보여주기
+        MsgBox ActiveWorkbook.Name
+
+        '6. 현재 열려있는 파일의 시트들
+        Worksheets
+
+        '7. 현재 열려있는 파일의 시트들의 수
+        Worksheets.Count
+
+        '8. 새로운 시트 만들기
+        Worksheets.Add
+
+        '9. Sheet1을 삭제하기
+        Worksheets("Sheet1").Delete
+
+        '10. 현재 시트의 이름을 보여주기
+        MsgBox ActiveSheet.Name
+
+        '11. 현재 열려있는 시트의 A1 cell 선택
+        Range("A1").Select
+
+        '12. 현재 열려있는 시트에서 사용된 영역을 선택
+        ActiveSheet.UsedRange.Select
+        
+        
 
 ---
 참고 사이트
