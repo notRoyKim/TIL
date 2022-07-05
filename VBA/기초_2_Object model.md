@@ -143,9 +143,25 @@ cell에 값을 입력하거나, 삭제하거나, cell들을 병합하는 등의 
 ### 1) 객체 접근 기본형
 
 1. 이름이 t1.xlsx인 파일
+
+    Application.Workbooks("t1.xlsx")
+    Workbooks("t1.xlsx")
+
 2. 이 파일의 Sheet1 시트
+
+    Application. Workbooks("t1.xlsx").Worksheets("Sheet1")
+    Workbooks("t1.xlsx").Worksheets("Sheet1")
+
 3. 이 시트의 A1 cell
+
+    Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
+    Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1")
+
 4. 이 시트의 A1 cell에 "TEST" 문자열 입력
+
+    Application.Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
+    Workbooks("t1.xlsx").Worksheets("Sheet1").Range("A1") = "TEST"
+
 5. 이 시트의 A1 cell의 글꼴을 굵게 설정
 6. 
 
