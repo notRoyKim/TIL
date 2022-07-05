@@ -122,4 +122,5 @@ cell에 값을 입력하거나, 삭제하거나, cell들을 병합하는 등의 
 
 ---
 참고 사이트
-[취미로 코딩하는 DA(Data Architect)(티스토리)](https://prodtool.tistory.com/)
+
+[ * 취미로 코딩하는 DA(Data Architect)(티스토리)](https://prodtool.tistory.com/)
