@@ -2,15 +2,10 @@
 > #### [1. Object model(객체 모델) 개요](
 > 
 > ##### 1) Application
-> 
 > ##### 2) Workbooks
-> 
 > ##### 3) Workbook
-> 
 > ##### 4) Worksheets
-> 
 > ##### 5) Worksheet
-> 
 > ##### 6) Range
 > 
 > #### 2. Object 모델 다루기
