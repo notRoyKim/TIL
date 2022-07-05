@@ -1,6 +1,25 @@
+> # 목차
+> ## [1. Object model(객체 모델) 개요](
+> 
+> ### 1) Application
+> 
+> ### 2) Workbooks
+> 
+> ### 3) Workbook
+> 
+> ### 4) Worksheets
+> 
+> ### 5) Worksheet
+> 
+> ### 6) Range
+> 
+> ## 2. Object 모델 다루기
+
 # Object model
 
-## 1. Application [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
+# 1. Object model(객체 모델) 개요
+
+### 1) Application [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
 
 Application은 엑셀의 process를 가리킨다.
 
@@ -20,7 +39,7 @@ Application은 엑셀의 process를 가리킨다.
     Application.ActiveCell.Font.Bold = True
     ActiveCell.Font.Bold = True
 
-## 2. Workbooks [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbooks "microsoft docs")
+### 2) Workbooks [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbooks "microsoft docs")
 
 하나의 액셀 process에서 열고 있는 파일 목록을 관리한다.
 
@@ -37,7 +56,7 @@ Application은 엑셀의 process를 가리킨다.
     `파일 열기
     Workbooks.Open FileName:="File.xlsx", Readonly=True
 
-## 3. Workbook [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbook "microsoft docs")
+### 3) Workbook [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbook "microsoft docs")
 
 하나의 엑셀 process에서 열고 있는 파일 목록 중 특정 파일 한개를 가리킨다.
 
@@ -52,7 +71,7 @@ Application은 엑셀의 process를 가리킨다.
     `다른 이름으로 저장하기
     Workbook.SaveAs Filename:="NewFile.xlsx"
 
-## 4. Worksheets [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheets "microsoft docs")
+### 4) Worksheets [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheets "microsoft docs")
 
 한 파일 내의 **시트 목록(Collection)을 관리**한다.
 
@@ -67,7 +86,7 @@ Application은 엑셀의 process를 가리킨다.
     `Sheet3 뒤에 Sheet1 복사
     Worksheets("Sheets1").Copy After:=Worksheets("sheet3")
     
-## 5. Worksheet [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheet "microsoft docs")
+### 5) Worksheet [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheet "microsoft docs")
 
 한 파일 내의 **시트 하나**를 가리킨다.
 
@@ -90,7 +109,7 @@ Worksheets와 Sheets Collection의 member이다.
     `Worksheets()의 return Object가 Worksheet.
     
     
-## 6. Range [[reference]](https://docs.microsoft.com/en-us/office/vba/api/excel.range(object) "microsoft docs")
+### 6) Range [[reference]](https://docs.microsoft.com/en-us/office/vba/api/excel.range(object) "microsoft docs")
 
 한 시트 내의 하나의 cell 또는 여러 cell을 가리킨다.
 
@@ -119,6 +138,16 @@ cell에 값을 입력하거나, 삭제하거나, cell들을 병합하는 등의 
     'A1:A2 cell 병합
     Worksheets(1).Range("A1:A2").Merge
 
+## 2. Object 모델 다루기
+
+### 1) 객체 접근 기본형
+
+1. 이름이 t1.xlsx인 파일
+2. 이 파일의 Sheet1 시트
+3. 이 시트의 A1 cell
+4. 이 시트의 A1 cell에 "TEST" 문자열 입력
+5. 이 시트의 A1 cell의 글꼴을 굵게 설정
+6. 
 
 ---
 참고 사이트
