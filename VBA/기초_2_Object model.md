@@ -1,6 +1,6 @@
 # Object model
 
-## Application [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
+## 1. Application [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
 
 Application은 엑셀의 process를 가리킨다.
 
@@ -20,7 +20,7 @@ Application은 엑셀의 process를 가리킨다.
     Application.ActiveCell.Font.Bold = True
     ActiveCell.Font.Bold = True
 
-## Workbooks
+## 2. Workbooks [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbooks "microsoft docs")
 
 하나의 액셀 process에서 열고 있는 파일 목록을 관리한다.
 
@@ -35,9 +35,7 @@ Application은 엑셀의 process를 가리킨다.
     `파일 열기
     Workbooks.Open FileName:="File.xlsx", Readonly=True
 
-[reference](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbooks "microsoft docs")
-
-## Workbook
+## 3. Workbook
 
 
 
