@@ -1,3 +1,5 @@
+# Object model
+
 > ##### 목차
 >  [1. Object model(객체 모델) 개요](#1-object-model객체-모델-개요-1)
 > 
@@ -14,8 +16,6 @@
 >  [6) Range](#6-range-reference)
 > 
 >  [2. Object 모델 다루기](#2-object-모델-다루기)
-
-# Object model
 
 # 1. Object model(객체 모델) 개요
 
