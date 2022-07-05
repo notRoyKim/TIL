@@ -30,12 +30,17 @@ Application은 엑셀의 process를 가리킨다.
 
     `모든 파일 닫기
     Workbooks.Close
+    
     `새로운 파일 생성하기
     Workbooks.Add
+    
     `파일 열기
     Workbooks.Open FileName:="File.xlsx", Readonly=True
 
-## 3. Workbook
+## 3. Workbook [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbook "microsoft docs")
+
+하나의 엑셀 process에서 열고 있는 파일 목록 중 특정 파일 한개를 가리킨다.
+파일을 닫거나, 저장하는 등의 용도로 이용한다.
 
 
 
