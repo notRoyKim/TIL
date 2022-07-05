@@ -90,3 +90,31 @@ Worksheets와 Sheets Collection의 member이다.
     `Worksheets()의 return Object가 Worksheet.
     
     
+## 6. Range [[reference]](https://docs.microsoft.com/en-us/office/vba/api/excel.range(object) "microsoft docs")
+
+한 시트 내의 하나의 cell 또는 여러 cell을 가리킨다.
+
+cell에 값을 입력하거나, 삭제하거나, cell들을 병합하는 등의 용도로 사용한다.
+
+액셀 VBA 코딩 시 가장 많이 사용하는 객체
+
+    'A1 cell의 값을 A5에 입력
+    Worksheets("Sheet1").Range("A5").Value = _ 
+    Worksheets("Sheet1").Range("A1").Value
+
+    'A1:E10 영역의 내용 삭제
+    Worksheets(1).Range("A1:E10").ClearContents
+
+    'A2(2행, 1열)에 B1:B5 합계 수식 입력
+    Worksheets(1).Range("A2").Formula = "=Sum(B1:B5)"
+    Worksheets(1).Cells(2, 1).Formula = "=Sum(B1:B5)"
+
+    '5행 삭제하기
+    Worksheets(1).Rows(5).Delete
+
+    '3열(C) 삭제하기
+    Worksheets(1).Columns("C").Delete
+    Worksheets(1).Columns(3).Delete
+
+    'A1:A2 cell 병합
+    Worksheets(1).Range("A1:A2").Merge
