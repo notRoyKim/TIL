@@ -6,15 +6,20 @@ Application은 엑셀의 process를 가리킨다.
 
 실행되어 있는 엑셀을 제어하거나 종료하려면 Application 개체를 이용한다.
 
+
     `book1.xls 파일 활성화
     Application.Windows("book1.xls").Activate
+    
     `액셀 종료
     Application.Quit()
 
+
 특이사항으로는 Application의 property들 중 대부분의 UI 객체들(ActiveCell, ActiveSheet 등)은 Application 객체 한정자(Object Qualifier)를 사용하지 않고도 작성할 수 있다.
+
 
     Application.ActiveCell.Font.Bold = True
     ActiveCell.Font.Bold = True
+
 
 [reference](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
 
