@@ -1,6 +1,6 @@
 # Object model
 
-## Application [reference](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
+## Application [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.application(object) "microsoft docs")
 
 Application은 엑셀의 process를 가리킨다.
 
