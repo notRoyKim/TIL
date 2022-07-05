@@ -40,7 +40,31 @@ Application은 엑셀의 process를 가리킨다.
 ## 3. Workbook [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.workbook "microsoft docs")
 
 하나의 엑셀 process에서 열고 있는 파일 목록 중 특정 파일 한개를 가리킨다.
+
 파일을 닫거나, 저장하는 등의 용도로 이용한다.
 
+    파일 닫기
+    Workbook.Close
+    
+    저장하기
+    Workbook.Save
+    
+    다른 이름으로 저장하기
+    Workbook.SaveAs Filename:="NewFile.xlsx"
 
+## 4. Worksheets [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheets "microsoft docs")
 
+한 파일 내의 시트 목록(Collection)을 관리한다.
+
+새로운 시트를 생성하거나, 삭제하는 등의 용도로 사용한다.
+
+    '첫번째 시트 앞에 2개 시트 추가
+    WorkSheets.Add Count:=2, Before:=Sheets(1)
+    
+    `시트 개수 출력
+    Debug.print Worksheets.Count
+    
+    `Sheet3 뒤에 Sheet1 복사
+    Worksheets("Sheets1").Copy After:=Worksheets("sheet3")
+    
+## 5. Worksheet [[reference]](https://docs.microsoft.com/ko-kr/office/vba/api/excel.worksheet "microsoft docs")
